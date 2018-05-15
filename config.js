@@ -2,7 +2,7 @@ const config = {
 	host: 'api.vip-class.ru',
 	database: {
 		host: 'localhost',
-		db: 'vip-classs',
+		db: 'vip-class',
 		user: 'root',
 		password: ''
 	},
