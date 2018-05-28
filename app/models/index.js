@@ -27,6 +27,6 @@ db.objects.hasMany(db.objectsImage)
 db.objectsImage.belongsTo(db.objects)
 db.rooms.belongsTo(db.house)
 db.house.hasMany(db.rooms)
-db.projects.belongsTo(db.projectsType)
 db.projectsType.hasMany(db.projects)
+db.projects.belongsTo(db.projectsType)
 module.exports = db

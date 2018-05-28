@@ -4,7 +4,7 @@ const constructionController = {
 		db.objects.findAndCountAll({
 			limit: 2,
 			attributes: {
-				include: [[db.sequelize.literal('(SELECT COUNT(*) FROM objectsimages WHERE objectsimages.objectId = objects.id)'), 'imagesCount']]
+				include: [[db.sequelize.literal('(SELECT COUNT(*) FROM objects_images WHERE objects_images.objectId = objects.id)'), 'imagesCount']]
 			},
 			include: [
 				{
@@ -24,7 +24,7 @@ const constructionController = {
 			limit: 2,
 			offset: parseInt(req.query.skip),
 			attributes: {
-				include: [[db.sequelize.literal('(SELECT COUNT(*) FROM objectsimages WHERE objectsimages.objectId = objects.id)'), 'imagesCount']]
+				include: [[db.sequelize.literal('(SELECT COUNT(*) FROM objects_images WHERE objects_images.objectId = objects.id)'), 'imagesCount']]
 			},
 			include: [
 				{

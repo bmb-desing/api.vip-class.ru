@@ -1,8 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
-	return sequelize.define('projects', {
+	return sequelize.define('project_images', {
 		name: {
 			type: DataTypes.STRING,
-			unique: true
 		},
 		area: DataTypes.INTEGER,
 		rooms: DataTypes.INTEGER,
